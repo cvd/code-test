@@ -1,11 +1,13 @@
 
 The problem:
+
 You want to be able to take any valid html that is decorated with a certain set of classes
 and impose a form on top of it to allow users to select what data should go into each of those elements.
 The spec for the input html is as follows: Any element (html tag) that is to have some data put into it is
 decorated with the class 'option' and each element with the class 'option' should have a unique ID that should
 be used as form input name for the form element that is placed within it. The options for the user to select
 between are the following key-value pairs:
+
   OPTIONS = [
     [nil , "Choose Field: "],
     [:teamkey, "Team Name"],
@@ -14,7 +16,7 @@ between are the following key-value pairs:
     [:team_rating,"Team Rating"]
   ]
 
-The key should be the option 'value' and the value should be the option text.
+The 0 index should be the option 'value' and the 1 index should be the option text.
 
 Use the input.html file as a sample input file.
 
